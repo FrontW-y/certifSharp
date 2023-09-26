@@ -11,144 +11,59 @@ namespace CertifGen3._0
 
         private List<string> listePrenom = new List<string>()
         {
-            "Jean",
-            "Marie",
-            "Pierre",
-            "Nicolas",
-            "François",
-            "Julie",
-            "Claire",
-            "Sophie",
-            "Lina",
-            "Élise",
-            "Diego",
-            "Tiago",
-            "Camille",
-            "Mohammed",
-            "Ahmed",
-            "Fatima",
-            "Salma",
-            "Youssef",
-            "Ali",
-            "Nadia",
-            "Zahra",
-            "Sara",
-            "Hamza",
-            "Lyna",
-            "Sadam",
-            "Li",
-            "Wang",
-            "Zhang",
-            "Liu",
-            "Chen",
-            "Yang"
-            
-            
-
-
+            "Jean", "Marie","Pierre",  "Nicolas", "François","Julie","Claire","Sophie","Lina","Élise","Diego",
+            "Tiago","Camille","Mohammed","Ahmed","Fatima","Salma","Youssef","Ali","Nadia","Zahra",
+            "Sara","Hamza","Lyna","Sadam","Li","Wang","Zhang","Liu","Chen","Yang"    
         };
 
         private List<string> listNom = new List<string>()
         {
-            "MARTIN",
-            "BERNARD",
-            "DUBOIS",
-            "THOMAS",
-            "ROBERT",
-            "RICHARD",
-            "PETIT",
-            "DURAND",
-            "LEROY",
-            "MOREAU",
-            "HASSAN",
-            "ALI",
-            "MAHMOUD",
-            "ABDULLAH",
-            "HUSSEIN",
-            "SAID",
-            "OMAR",
-            "YOUSEF",
-            "IBRAHIM",
-            "AHMED",
-            "LI",
-            "WANG",
-            "ZHANG",
-            "LIU",
-            "CHEN",
-            "YANG",
-            "HUANG",
-            "ZHAO",
-            "WU",
-            "ZHOU"
+            "MARTIN", "BERNARD", "DUBOIS", "THOMAS", "ROBERT",
+            "RICHARD", "PETIT", "DURAND", "LEROY", "MOREAU",
+            "HASSAN", "ALI", "MAHMOUD", "ABDULLAH", "HUSSEIN",
+            "SAID", "OMAR", "YOUSEF", "IBRAHIM", "AHMED",
+            "LI", "WANG", "ZHANG", "LIU", "CHEN", "YANG",
+            "HUANG", "ZHAO", "WU", "ZHOU"
         };
+
 
 
         List<string> villes = new List<string>()
         {
-    "Paris, 75000","Marseille, 13000","Lyon, 69000","Toulouse, 31000",
-    "Nice, 06000","Nantes, 44000","Strasbourg, 67000","Montpellier, 34000",
-    "Bordeaux, 33000","Lille, 59000","Rennes, 35000",
-    "Reims, 51100","Le Havre, 76600","Saint-Etienne, 42000",
-    "Toulon, 83000","Grenoble, 38000","Dijon, 21000","Angers, 49000",
-    "Nîmes, 30000","Saint-Denis, 97400","Amiens, 80000",
-    "Brest, 29200","Carcassonne, 11000","Colmar, 68000",
-    "Douai, 59500","Fréjus, 83600","La Roche-sur-Yon, 85000",
-    "Le Puy-en-Velay, 43000","Limoges, 87000","Manosque, 04100","Mulhouse, 68100","Niort, 79000",
-    "Perpignan, 66000",
-    "Poitiers, 86000", "Quimper, 29000","Roanne, 42300","Saint-Brieuc, 22000",
-    "Tarbes, 65000","Valence, 26000","Vannes, 56000"
+            "Paris, 75000","Marseille, 13000","Lyon, 69000","Toulouse, 31000",
+            "Nice, 06000","Nantes, 44000","Strasbourg, 67000","Montpellier, 34000",
+            "Bordeaux, 33000","Lille, 59000","Rennes, 35000",
+            "Reims, 51100","Le Havre, 76600","Saint-Etienne, 42000",
+            "Toulon, 83000","Grenoble, 38000","Dijon, 21000","Angers, 49000",
+            "Nîmes, 30000","Saint-Denis, 97400","Amiens, 80000",
+            "Brest, 29200","Carcassonne, 11000","Colmar, 68000",
+            "Douai, 59500","Fréjus, 83600","La Roche-sur-Yon, 85000",
+            "Le Puy-en-Velay, 43000","Limoges, 87000","Manosque, 04100","Mulhouse, 68100","Niort, 79000",
+            "Perpignan, 66000",
+            "Poitiers, 86000", "Quimper, 29000","Roanne, 42300","Saint-Brieuc, 22000",
+            "Tarbes, 65000","Valence, 26000","Vannes, 56000"
         };
 
         List<string> rue = new List<string>()
-{   
-         "rue de la Paix,",
-         "rue de Rivoli,",
-         "avenue des Champs-Élysées,",
-         "boulevard Saint-Germain,",
-         "rue du Faubourg Saint-Honoré,",
-         "rue Saint-Antoine,",
-         "place de la Concorde,",
-         "rue de la Roquette,",
-         "rue de Charonne,",
-         "boulevard de la Villette,",
-         "rue de la Pompe,",
-         "rue des Martyrs,",
-         "rue Montmartre,",
-        "rue Saint-Denis,",
-          "rue de la Huchette,",
-       "rue des Petits Champs,",
-      "rue de la Grange aux Belles,",
-       "rue des Francs Bourgeois,",
-    "rue du Temple,",
-    "rue de la Folie Méricourt,",
-       "rue de Belleville,",
-    "rue de la Butte aux Cailles,",
-       "rue de la Tombe-Issoire,",
-        "rue des Rosiers,",
-       "rue du Cherche-Midi,",
-      "rue du Bac,",
-      "rue de Passy,",
-      "rue de Vaugirard,",
-      "rue de la Convention,",
-      "rue de Sèvres,",
-      "rue du Poteau,",
-      "rue de la Cour des Noues,",
-      "rue de la République,",
-      "rue Saint-Maur,",
-      "rue des Pyrénées,",
-      "rue de la Mare,",
-      "rue de la Fontaine au Roi,",
-      "rue du Marché Saint-Honoré,",
-      "rue du Louvre,",
-      "rue de la Rochechouart,",
-      "rue de la Grange Batelière,",
-      "rue de Turbigo,",
-      "rue des Archives,",
-     "rue du Regard,",
-    "rue du Faubourg Poissonnière,",
-      "rue de la Tour,"
-};
-
+        {
+            "rue de la Paix,", "rue de Rivoli,", "avenue des Champs-Élysées,",
+            "boulevard Saint-Germain,", "rue du Faubourg Saint-Honoré,", "rue Saint-Antoine,",
+            "place de la Concorde,", "rue de la Roquette,", "rue de Charonne,",
+            "boulevard de la Villette,", "rue de la Pompe,", "rue des Martyrs,",
+            "rue Montmartre,", "rue Saint-Denis,", "rue de la Huchette,",
+            "rue des Petits Champs,", "rue de la Grange aux Belles,", "rue des Francs Bourgeois,",
+            "rue du Temple,", "rue de la Folie Méricourt,", "rue de Belleville,",
+            "rue de la Butte aux Cailles,", "rue de la Tombe-Issoire,", "rue des Rosiers,",
+            "rue du Cherche-Midi,", "rue du Bac,", "rue de Passy,",
+            "rue de Vaugirard,", "rue de la Convention,", "rue de Sèvres,",
+            "rue du Poteau,", "rue de la Cour des Noues,", "rue de la République,",
+            "rue Saint-Maur,", "rue des Pyrénées,", "rue de la Mare,",
+            "rue de la Fontaine au Roi,", "rue du Marché Saint-Honoré,", "rue du Louvre,",
+            "rue de la Rochechouart,", "rue de la Grange Batelière,", "rue de Turbigo,",
+            "rue des Archives,", "rue du Regard,", "rue du Faubourg Poissonnière,",
+            "rue de la Tour,"
+        };
+        
 
         private string nomDoc;
         private string numeroFiness;
@@ -210,14 +125,14 @@ namespace CertifGen3._0
         private const float y_signature = 720f;
 
 
-        private const string titre = "Compte rendu de téléconsultation";
-        private const string nomDomaine = "Maison médikal";
+        private const string titre =        "Compte rendu de téléconsultation";
+        private const string nomDomaine =   "Maison médikal";
 
         private const string solicitation = "J'ai été sollicité(e) ce jour, dans le cadre du service MEDADOM, par le patient :";
         private const string interogatoirePartUn = "L’interrogatoire lors de la téléconsultation, en tenant compte de l'absence de possibilité,";
         private const string interogatoirePartDeux = "d'examen clinique, permet de noter : ";
-        private const string conseil = "Il est conseillé de solliciter un avis complémentaire pour réevaluation si le problème devait\n persister. En cas d'aggravation ressentie, consultez un service d'urgence.";
-        private const string medecinType = "Médecin Généraliste";
+        private const string conseil =      "Il est conseillé de solliciter un avis complémentaire pour réevaluation si le problème devait\n persister. En cas d'aggravation ressentie, consultez un service d'urgence.";
+        private const string medecinType =  "Médecin Généraliste";
 
 
         private string GenererTelephone()
@@ -277,17 +192,14 @@ namespace CertifGen3._0
 
             XPoint[] points = new XPoint[]
             {
-    new XPoint(rand.Next(50, 100), page.Height - rand.Next(50, 100)),   // Point de départ
-
-    new XPoint(rand.Next(50, 100), page.Height - rand.Next(50, 100)),   // Premier point de contrôle du premier segment
-    new XPoint(rand.Next(50, 100), page.Height - rand.Next(50, 100)),   // Deuxième point de contrôle du premier segment
-    new XPoint(rand.Next(50, 100), page.Height - rand.Next(50, 100)),   // Point final du premier segment
-
-    new XPoint(rand.Next(50, 100), page.Height - rand.Next(50, 100)),   // Point de départ du deuxième segment
-
-    new XPoint(rand.Next(50, 100), page.Height - rand.Next(50, 100)),   // Premier point de contrôle du deuxième segment
-    new XPoint(rand.Next(50, 100), page.Height - rand.Next(50, 100)),   // Deuxième point de contrôle du deuxième segment
-    new XPoint(rand.Next(50, 100), page.Height - rand.Next(50, 100))    // Point final du deuxième segment
+                new XPoint(rand.Next(50, 100), page.Height - rand.Next(50, 100)),   // Point de départ
+                new XPoint(rand.Next(50, 100), page.Height - rand.Next(50, 100)),   // Premier point de contrôle du premier segment
+                new XPoint(rand.Next(50, 100), page.Height - rand.Next(50, 100)),   // Deuxième point de contrôle du premier segment
+                new XPoint(rand.Next(50, 100), page.Height - rand.Next(50, 100)),   // Point final du premier segment
+                new XPoint(rand.Next(50, 100), page.Height - rand.Next(50, 100)),   // Point de départ du deuxième segment
+                new XPoint(rand.Next(50, 100), page.Height - rand.Next(50, 100)),   // Premier point de contrôle du deuxième segment
+                new XPoint(rand.Next(50, 100), page.Height - rand.Next(50, 100)),   // Deuxième point de contrôle du deuxième segment
+                new XPoint(rand.Next(50, 100), page.Height - rand.Next(50, 100))    // Point final du deuxième segment
             };
 
 
