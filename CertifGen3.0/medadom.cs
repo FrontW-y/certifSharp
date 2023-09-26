@@ -2,7 +2,6 @@
 using PdfSharp.Drawing.Layout;
 using PdfSharp.Pdf;
 using System.Text;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CertifGen3._0
 {
@@ -28,7 +27,7 @@ namespace CertifGen3._0
 
 
 
-        List<string> villes = new List<string>()
+        private List<string> villes = new List<string>()
         {
             "Paris, 75000","Marseille, 13000","Lyon, 69000","Toulouse, 31000",
             "Nice, 06000","Nantes, 44000","Strasbourg, 67000","Montpellier, 34000",
@@ -44,7 +43,7 @@ namespace CertifGen3._0
             "Tarbes, 65000","Valence, 26000","Vannes, 56000"
         };
 
-        List<string> rue = new List<string>()
+        private List<string> rue = new List<string>()
         {
             "rue de la Paix,", "rue de Rivoli,", "avenue des Champs-Élysées,",
             "boulevard Saint-Germain,", "rue du Faubourg Saint-Honoré,", "rue Saint-Antoine,",
@@ -121,8 +120,7 @@ namespace CertifGen3._0
         private const float x_nomSign = 35f;
         private const float y_nomSign = 710;
 
-        private const float x_signature = 35f;
-        private const float y_signature = 720f;
+        
 
 
         private const string titre =        "Compte rendu de téléconsultation";

@@ -5,6 +5,11 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "certifCSharp", "CertifGen3.0\certifCSharp.csproj", "{4FAE7C62-9D3E-4449-B3C5-F5D0A21DF823}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "Éléments de solution", "{A8503ED6-4325-441A-8944-AE8E812CE6A1}"
+	ProjectSection(SolutionItems) = preProject
+		default.cs = default.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
