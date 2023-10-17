@@ -211,7 +211,7 @@ namespace CertifGen3._0
 
 
 		private const string titre = "Compte rendu de téléconsultation";
-		private const string nomDomaine = "Maison médikal";
+		private const string nomDomaine = "Centre MedikSanté";
 
 		private const string solicitation = "J'ai été sollicité(e) ce jour, dans le cadre du service MEDADOM, par le patient :";
 		private const string interogatoirePartUn = "L’interrogatoire lors de la téléconsultation, en tenant compte de l'absence de possibilité,";

@@ -30,10 +30,22 @@ namespace CertifGen3._0
         }
 
         private void button1_Click(object sender, EventArgs e)
+
         {
+            string dossierEleve = System.Environment.GetEnvironmentVariable("USERPROFILE") + @"\Documents\Certificats\" + nomEleve.Text + @"\";
+            
+            if(!Directory.Exists(dossierEleve))
+                Directory.CreateDirectory(dossierEleve);
+            
+
+
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
-                saveFileDialog.FileName = "Certificat_" + prenomEleve.Text + "_" + DateTime.Today.Day + "-" + DateTime.Today.Month + "-" + DateTime.Today.Year;
+                saveFileDialog.InitialDirectory = dossierEleve;
+
+                saveFileDialog.FileName = "Certificat_" + prenomEleve.Text + "_" + DateTime.Today.Day + "-" + DateTime.Today.Month + "-" 
+                    + DateTime.Today.Year+ "_" + System.Guid.NewGuid().ToString();
+
                 saveFileDialog.AddExtension = true;
                 saveFileDialog.DefaultExt = "pdf";
                 saveFileDialog.Filter = "Fichiers PDF (*.pdf)|*.pdf";
