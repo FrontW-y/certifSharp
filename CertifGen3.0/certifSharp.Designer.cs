@@ -1,4 +1,4 @@
-﻿namespace CertifGen3._0
+﻿namespace certifSharp
 {
     partial class certifSharp
     {

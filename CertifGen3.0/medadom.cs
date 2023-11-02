@@ -3,7 +3,7 @@ using PdfSharp.Drawing.Layout;
 using PdfSharp.Pdf;
 using System.Text;
 
-namespace CertifGen3._0
+namespace certifSharp
 {
     internal class medadom
     {

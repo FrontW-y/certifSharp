@@ -1,6 +1,6 @@
 
 
-namespace CertifGen3._0
+namespace certifSharp
 {
     internal static class Program
     {
