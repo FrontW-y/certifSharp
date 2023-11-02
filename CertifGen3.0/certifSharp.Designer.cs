@@ -105,6 +105,7 @@
             dateNaissanceBox.Name = "dateNaissanceBox";
             dateNaissanceBox.Size = new Size(171, 31);
             dateNaissanceBox.TabIndex = 9;
+            dateNaissanceBox.ValueChanged += dateNaissanceBox_ValueChanged;
             // 
             // nomEleve
             // 

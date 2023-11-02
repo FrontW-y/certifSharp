@@ -33,18 +33,18 @@ namespace CertifGen3._0
 
         {
             string dossierEleve = System.Environment.GetEnvironmentVariable("USERPROFILE") + @"\Documents\Certificats\" + nomEleve.Text + @"\";
-            
-            if(!Directory.Exists(dossierEleve))
+
+            if (!Directory.Exists(dossierEleve))
                 Directory.CreateDirectory(dossierEleve);
-            
+
 
 
             using (SaveFileDialog saveFileDialog = new SaveFileDialog())
             {
                 saveFileDialog.InitialDirectory = dossierEleve;
 
-                saveFileDialog.FileName = "Certificat_" + prenomEleve.Text + "_" + DateTime.Today.Day + "-" + DateTime.Today.Month + "-" 
-                    + DateTime.Today.Year+ "_" + System.Guid.NewGuid().ToString();
+                saveFileDialog.FileName = "Certificat_" + prenomEleve.Text + "_" + DateTime.Today.Day + "-" + DateTime.Today.Month + "-"
+                    + DateTime.Today.Year + "_" + System.Guid.NewGuid().ToString();
 
                 saveFileDialog.AddExtension = true;
                 saveFileDialog.DefaultExt = "pdf";
@@ -155,6 +155,11 @@ namespace CertifGen3._0
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateNaissanceBox_ValueChanged(object sender, EventArgs e)
         {
 
         }

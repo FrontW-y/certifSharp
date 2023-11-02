@@ -11,8 +11,8 @@ namespace CertifGen3._0
         private List<string> listePrenom = new List<string>()
         {
             "Jean", "Marie","Pierre",  "Nicolas", "François","Julie","Claire","Sophie","Lina","Élise","Diego",
-            "Tiago","Camille","Mohammed","Ahmed","Fatima","Salma","Youssef","Ali","Nadia","Zahra",
-            "Sara","Hamza","Lyna","Sadam","Li","Wang","Zhang","Liu","Chen","Yang"    
+            "Tiago","Camille","Mohammed","Ahmed","Fatima","Salma","Youssef  ","Ali","Nadia","Zahra",
+            "Sara","Hamza","Lyna","Sadam","Li","Wang","Zhang","Liu","Chen","Yang"
         };
 
         private List<string> listNom = new List<string>()
@@ -62,7 +62,7 @@ namespace CertifGen3._0
             "rue des Archives,", "rue du Regard,", "rue du Faubourg Poissonnière,",
             "rue de la Tour,"
         };
-        
+
 
         private string nomDoc;
         private string numeroFiness;
@@ -120,17 +120,17 @@ namespace CertifGen3._0
         private const float x_nomSign = 35f;
         private const float y_nomSign = 710;
 
-        
 
 
-        private const string titre =        "Compte rendu de téléconsultation";
-        private const string nomDomaine =   "Maison médikal";
+
+        private const string titre = "Compte rendu de téléconsultation";
+        private const string nomDomaine = "Maison médikal";
 
         private const string solicitation = "J'ai été sollicité(e) ce jour, dans le cadre du service MEDADOM, par le patient :";
         private const string interogatoirePartUn = "L’interrogatoire lors de la téléconsultation, en tenant compte de l'absence de possibilité,";
         private const string interogatoirePartDeux = "d'examen clinique, permet de noter : ";
-        private const string conseil =      "Il est conseillé de solliciter un avis complémentaire pour réevaluation si le problème devait\n persister. En cas d'aggravation ressentie, consultez un service d'urgence.";
-        private const string medecinType =  "Médecin Généraliste";
+        private const string conseil = "Il est conseillé de solliciter un avis complémentaire pour réevaluation si le problème devait\n persister. En cas d'aggravation ressentie, consultez un service d'urgence.";
+        private const string medecinType = "Médecin Généraliste";
 
 
         private string GenererTelephone()
@@ -148,13 +148,13 @@ namespace CertifGen3._0
             return numero.ToString();
         }
 
-        private void  GenererAdress()
+        private void GenererAdress()
         {
 
             Random random = new Random();
 
             string tempAdresse = villes[random.Next(villes.Count())];
-            int tempNumeroRue  = random.Next(1, 150);
+            int tempNumeroRue = random.Next(1, 150);
             string tempRue = rue[random.Next(rue.Count())];
 
 
@@ -170,11 +170,11 @@ namespace CertifGen3._0
             var result = numeroDepartement + string.Join("", numerosAleatoires.Select(n => n.ToString()));
 
             numeroFiness = result;
-            adresse = tempNumeroRue +" "+ " "+tempRue + " "+tempAdresse;
+            adresse = tempNumeroRue + " " + " " + tempRue + " " + tempAdresse;
         }
 
 
-        
+
         public medadom(PdfDocument doc, string nom, string prenom, string dateNaissance, string genre, string dateAbs, string motifs)
         {
 
@@ -204,7 +204,7 @@ namespace CertifGen3._0
             XRect rect = new XRect(x_motifs, y_motifs, page.Width, page.Height);
 
             GenererAdress();
-            
+
             nomDoc = "Dr. " + listePrenom[rand.Next(listePrenom.Count())] + " " + listNom[rand.Next(listNom.Count())];
 
             gfx.DrawImage(logo, new XRect(x_logo, y_logo, w_logo, h_logo));
@@ -218,19 +218,19 @@ namespace CertifGen3._0
 
             gfx.DrawString(adresse, global_font, XBrushes.Black, new XRect(x_adresse, y_adresse, page.Width, 0), XStringFormats.Default);
 
-            gfx.DrawString("No Finess : "+ numeroFiness, global_font, XBrushes.Black, new XRect(x_finess, y_finess, page.Width, 0), XStringFormats.Default);
+            gfx.DrawString("No Finess : " + numeroFiness, global_font, XBrushes.Black, new XRect(x_finess, y_finess, page.Width, 0), XStringFormats.Default);
 
 
             gfx.DrawString(medecinType, global_font, XBrushes.Black, new XRect(x_medecinType, y_medecinType, page.Width, 0), XStringFormats.Default);
             gfx.DrawString(dateAbs, global_font, XBrushes.Black, new XRect(x_dateCreation, y_dateCreation, page.Width, 0), XStringFormats.Default);
 
             gfx.DrawString(solicitation, global_font, XBrushes.Black, new XRect(x_solicitation, y_solicitation, page.Width, 0), XStringFormats.Default);
-            gfx.DrawString(nom +" "+ prenom + " né(e) le : " + dateNaissance, global_font, XBrushes.Black, new XRect(x_nomPatient, y_nomPatient, page.Width, 0), XStringFormats.Default);          
-            
+            gfx.DrawString(nom + " " + prenom + " né(e) le : " + dateNaissance, global_font, XBrushes.Black, new XRect(x_nomPatient, y_nomPatient, page.Width, 0), XStringFormats.Default);
+
 
             gfx.DrawString(interogatoirePartUn, global_font, XBrushes.Black, new XRect(x_interogatoire, y_interogatoire, page.Width, 0), XStringFormats.Default);
             gfx.DrawString(interogatoirePartDeux, global_font, XBrushes.Black, new XRect(x_interogatoire, y_interogatoireDeux, page.Width, 0), XStringFormats.Center);
-            
+
             /*** Dispose le block de motifs ***/
 
             tf.DrawString(motifs, global_font, XBrushes.Black, rect, XStringFormats.TopLeft);
