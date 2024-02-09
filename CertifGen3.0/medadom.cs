@@ -71,54 +71,54 @@ namespace certifSharp
 
 
 
-        private const float x_title = 85f;
-        private const float y_title = 49f;
+        private const float x_title = ;
+        private const float y_title = ;
 
-        private const float x_logo = 440f;
-        private const float y_logo = 18f;
-        private const float w_logo = 144;
-        private const float h_logo = 46;
+        private const float x_logo = ;
+        private const float y_logo = ;
+        private const float w_logo = ;
+        private const float h_logo = ;
 
-        private const float x_drNom = 35f;
-        private const float y_drNom = 106f;
+        private const float x_drNom = ;
+        private const float y_drNom = ;
 
-        private const float x_dateCreation = 393;
-        private const float y_dateCreation = 128;
+        private const float x_dateCreation = ;
+        private const float y_dateCreation = ;
 
-        private const float x_medecinType = 35f;
-        private const float y_medecinType = 142f;
+        private const float x_medecinType = ;
+        private const float y_medecinType = ;
 
-        private const float x_nomCentre = 35f;
-        private const float y_nomCentre = 182f;
+        private const float x_nomCentre = ;
+        private const float y_nomCentre = ;
 
-        private const float x_adresse = 35f;
-        private const float y_adresse = 200f;
+        private const float x_adresse = ;
+        private const float y_adresse = ;
 
-        private const float x_finess = 35f;
-        private const float y_finess = 216f;
+        private const float x_finess = ;
+        private const float y_finess = ;
 
-        private const float x_tel = 35f;
-        private const float y_tel = 232f;
+        private const float x_tel = ;
+        private const float y_tel = ;
 
-        private const float x_solicitation = 30f;
-        private const float y_solicitation = 301f;
+        private const float x_solicitation = ;
+        private const float y_solicitation = ;
 
-        private const float x_nomPatient = 130f;
-        private const float y_nomPatient = 335f;
+        private const float x_nomPatient = ;
+        private const float y_nomPatient = ;
 
-        private const float x_interogatoire = 20f;
-        private const float y_interogatoire = 372f;
-        private const float y_interogatoireDeux = 392f;
+        private const float x_interogatoire = ;
+        private const float y_interogatoire = ;
+        private const float y_interogatoireDeux = ;
 
 
-        private const float x_motifs = 53f;
-        private const float y_motifs = 450f;
+        private const float x_motifs = ;
+        private const float y_motifs = ;
 
-        private const float x_conseil = 35f;
-        private const float y_conseil = 640f;
+        private const float x_conseil = ;
+        private const float y_conseil = ;
 
-        private const float x_nomSign = 35f;
-        private const float y_nomSign = 710;
+        private const float x_nomSign = ;
+        private const float y_nomSign = ;
 
 
 
